@@ -36,5 +36,5 @@ class Var(object):
     else:
         URL = "https://dazaui-1db438519a66.herokuapp.com".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://madarazbotz:JPDvbYhldESLHpDf@cluster0.dbdvuzn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', ''))
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'SMKTHEBOTZ'))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
